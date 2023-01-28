@@ -13,28 +13,38 @@ class Trainer:
         encoder,
         discriminator,
         generator,
-        device,
+        train_loader=None,
+        val_loader=None,
+        device='cpu',
         artifact_path='artifact/checkpoint'
     ):
         self.config = config
         self.encoder = encoder
         self.discriminator = discriminator
         self.generator = generator
-        self.device = device
+        self.train_loader = train_loader
+        self.val_loader = val_loader
         self.negative_log_likelihood_loss = torch.nn.CrossEntropyLoss(ignore_index=-1)
+        
+        self._setup_device(device)
+        self._set_up_artifact_path(artifact_path)
+
+    def _set_up_artifact_path(self, artifact_path):
+        os.makedirs(artifact_path, exist_ok=True)
         self.artifact_path = artifact_path
 
-        os.makedirs(artifact_path, exist_ok=True)
-
-    def to_device(self, device="cuda"):
+    def _setup_device(self, device):
         if device == "cuda" and torch.cuda.is_available():
-            device = torch.device(device) 
+            print("Selected Device: CUDA")
+            self.device = torch.device(self.device)
         else:
-            print(f"Selected Device: CPU")
-            torch.device('cpu')
-        self.encoder.to(device)
-        self.discriminator.to(device)
-        self.generator.to(device)
+            print("Selected Device: CPU")
+            self.device = torch.device('cpu')
+
+    def to_device(self):
+        self.encoder.to(self.device)
+        self.discriminator.to(self.device)
+        self.generator.to(self.device)
 
     def configure_optimizer(self):
         discriminator_params = (

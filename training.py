@@ -97,11 +97,6 @@ class Trainer:
     def train_step(self, batch):
         self.encoder.train(), self.generator.train(), self.discriminator.train()
 
-        # b_input_ids = batch['input_ids'].to(self.device)
-        # b_input_mask = batch['attention_mask'].to(self.device)
-        # b_labels = batch['label_id'].to(self.device)
-        # b_label_mask = batch['label_mask'].to(self.device)
-
         b_input_ids = batch[0].to(self.device)
         b_input_mask = batch[1].to(self.device)
         b_labels = batch[2].to(self.device)
@@ -193,10 +188,6 @@ class Trainer:
         self.encoder.eval()
         self.discriminator.eval()
         self.generator.eval()
-
-        # b_input_ids = batch['input_ids'].to(self.device)
-        # b_input_mask = batch['attention_mask'].to(self.device)
-        # b_labels = None if inference_mode else batch['label_id'].to(device)
 
         b_input_ids = batch[0].to(self.device)
         b_input_mask = batch[1].to(self.device)

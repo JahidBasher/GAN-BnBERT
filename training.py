@@ -26,8 +26,12 @@ class Trainer:
 
         os.makedirs(artifact_path, exist_ok=True)
 
-    def to_device(self, device=None):
-        device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    def to_device(self, device="cuda"):
+        if device == "cuda" and torch.cuda.is_available():
+            device = torch.device(device) 
+        else:
+            print(f"Selected Device: CPU")
+            torch.device('cpu')
         self.encoder.to(device)
         self.discriminator.to(device)
         self.generator.to(device)
@@ -47,7 +51,7 @@ class Trainer:
         )
 
     def set_train_dataloader(self, dataset, sampler=None):
-        self.train_loader =  torch.utils.data.DataLoader(
+        self.train_loader = torch.utils.data.DataLoader(
             dataset,
             sampler=sampler(dataset) if sampler else None,
             batch_size=self.config.train_batch_size
@@ -69,7 +73,7 @@ class Trainer:
 
     def train(self, epochs=10):
         for epoch in tqdm(range(epochs)):
-            print(f"Training Epoch: {epoch}")
+            print(f"Training Epoch: {epoch}/{epochs}")
             train_loss = self.train_epoch(self.train_loader)
             print("Train Metric: ", train_loss)
             val_loss = self.val_epoch(self.val_loader)

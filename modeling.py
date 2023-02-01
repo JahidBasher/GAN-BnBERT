@@ -5,8 +5,8 @@ class Generator(nn.Module):
     def __init__(
         self,
         noise_size=100,
-        output_size=512,
-        hidden_sizes=[512],
+        output_size=768,
+        hidden_sizes=[768],
         dropout_rate=0.1
     ):
         super(Generator, self).__init__()
@@ -30,8 +30,8 @@ class Generator(nn.Module):
 class Discriminator(nn.Module):
     def __init__(
         self,
-        input_size=512,
-        hidden_sizes=[512],
+        input_size=768,
+        hidden_sizes=[768],
         num_labels=2,
         dropout_rate=0.1
     ):

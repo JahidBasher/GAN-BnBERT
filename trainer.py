@@ -24,8 +24,7 @@ class Trainer:
         self.generator = generator
         self.train_loader = train_loader
         self.val_loader = val_loader
-        self.negative_log_likelihood_loss = torch.nn.CrossEntropyLoss(ignore_index=-1)
-
+        self.negative_log_likelihood_loss = torch.nn.CrossEntropyLoss()
         self.print = printer
         self._setup_device(device)
         self._set_up_artifact_path(config.artifact_path)
@@ -88,11 +87,11 @@ class Trainer:
 
             train_loss = self.train_epoch(self.train_loader)
             val_loss = self.val_epoch(self.val_loader)
-            
+
             self.save_model(epoch, train_loss, val_loss)
 
-            val_verbose = '\t'.join(["Validation:"]+[f"{k}_{v:.5f}" for k, v in val_loss.items()])
-            train_verbose = '\t'.join(["Train:"]+[f"{k}_{v:.5f}" for k, v in train_loss.items()])
+            val_verbose = '\t'.join(["Validation:"]+[f"{k}_{v:.5f}" for k, v in val_loss.items() if not isinstance(v, np.ndarray)])
+            train_verbose = '\t'.join(["Train:"]+[f"{k}_{v:.5f}" for k, v in train_loss.items() if not isinstance(v, np.ndarray)])
 
             self._verbose((epoch_verbose, train_verbose, val_verbose))
 
@@ -108,7 +107,7 @@ class Trainer:
             'generator_loss': generator_loss/len(train_dataloader),
             'discriminator_loss': discriminator_loss/len(train_dataloader)
         }
-    
+
     def train_step(self, batch):
         self.encoder.train(), self.generator.train(), self.discriminator.train()
 
@@ -120,8 +119,8 @@ class Trainer:
         real_batch_size = b_input_ids.shape[0]
 
         model_outputs = self.encoder(b_input_ids, attention_mask=b_input_mask)
-        hidden_states = model_outputs[-1]
-        
+        hidden_states = model_outputs['last_hidden_state'][:, 0, :]
+
         generator_representation = self.generator(self._generate_noise(real_batch_size))
 
         disciminator_input = torch.cat([hidden_states, generator_representation], dim=0)
@@ -132,13 +131,12 @@ class Trainer:
         dis_real_probs, dis_fake_probs = torch.split(probs, real_batch_size)
 
         generator_loss = (
-            -1 * torch.mean(torch.log(1 - dis_fake_probs[:,-1] + self.config.epsilon))
+            -1 * torch.mean(torch.log(1 - dis_fake_probs[:, -1] + self.config.epsilon))
             + torch.mean(torch.pow(torch.mean(dis_real_features, dim=0) - torch.mean(dis_fake_features, dim=0), 2))
         )
 
-        log_probs = F.log_softmax(dis_real_logits[:, 0:-1], dim=-1)
-        # The discriminator provides an output for labeled and unlabeled real data
-        # so the loss evaluated for unlabeled data is ignored (masked)
+        log_probs = F.log_softmax(dis_real_logits[:, :-1], dim=-1)
+
         label2one_hot = torch.nn.functional.one_hot(b_labels, len(self.config.label_list))
         single_example_loss = -torch.sum(label2one_hot * log_probs, dim=-1)
         selected_single_example_loss = torch.masked_select(
@@ -169,19 +167,20 @@ class Trainer:
         return {
             'generator_loss': generator_loss.detach().cpu().numpy(),
             'discriminator_loss': discriminator_loss.detach().cpu().numpy()
-        }                   
-                
-    def val_epoch(self, val_dataloader):
+        }
 
-        validation_loss, predictions, ground_truths = 0, [], []
+    def val_epoch(self, val_dataloader, mode='training'):
+
+        validation_loss, predictions, ground_truths, probs = 0, [], [], []
 
         for step, batch in tqdm(enumerate(val_dataloader)):
-            _validation_loss, _predictions, _ground_truths = self.val_step(
+            _validation_loss, _predictions, _ground_truths, _probs = self.val_step(
                 batch, device=self.device
             )
             validation_loss += _validation_loss
             predictions += _predictions
             ground_truths += _ground_truths
+            probs += _probs
             # self.print(_validation_loss, _predictions, _ground_truths)
 
         predictions = torch.stack(predictions).numpy()
@@ -193,11 +192,20 @@ class Trainer:
             ground_truths=ground_truths
         )
 
-        return {
+        returnable = {
             "validation_accuracy": validation_accouracy,
             "validation_loss": validation_loss
         }
-        
+
+        if mode == 'inference':
+            returnable = {
+                **returnable,
+                "predictions": predictions,
+                "ground_truths": ground_truths,
+                "probs": torch.stack(probs).detach().cpu().numpy()
+            }
+        return returnable
+
     def val_step(self, batch, inference_mode=False, device=None):
 
         self.encoder.eval()
@@ -207,30 +215,31 @@ class Trainer:
         b_input_ids = batch[0].to(self.device)
         b_input_mask = batch[1].to(self.device)
         b_labels = None if inference_mode else batch[2].to(device)
- 
+
         with torch.no_grad():
             model_outputs = self.encoder(b_input_ids, attention_mask=b_input_mask)
-            hidden_states = model_outputs[-1]
+            hidden_states = model_outputs['last_hidden_state'][:, 0, :]
             _, logits, probs = self.discriminator(hidden_states)
             # log_probs = F.log_softmax(probs[:,1:], dim=-1)
-            filtered_logits = logits[:, 0:-1]
+            filtered_logits = logits[:, :-1]
             # Accumulate the test loss.
             validation_loss = 0 if inference_mode else self.negative_log_likelihood_loss(filtered_logits, b_labels)
-             
+
         # Accumulate the predictions and the input labels
         _, preds = torch.max(filtered_logits, 1)
         predictions = preds.detach().cpu()
         ground_truths = None if inference_mode else b_labels.detach().cpu()
+        probs = probs.detach().cpu()
 
-        return validation_loss, predictions, ground_truths
-    
+        return validation_loss, predictions, ground_truths, probs
+
     def _compute_metrics(self, predictions, ground_truths):
         accuracy = np.sum(predictions == ground_truths) / len(predictions)
         return accuracy
 
     def save_model(self, epoch, train_loss, val_loss):
-        
-        saving_path = f"{self.artifact_path}/epoch_{epoch}.pt"
+
+        saving_path = f"{self.artifact_path}/epoch_{epoch}_{val_loss}.pt"
 
         torch.save(
             {

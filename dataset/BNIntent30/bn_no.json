@@ -1,0 +1,902 @@
+[
+    {
+        "text": "no, that's incorrect",
+        "bn_text": "না, এটা ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's not true",
+        "bn_text": "এটা সত্যি না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is not true, it's false",
+        "bn_text": "এটি সত্য নয়, এটি মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no way",
+        "bn_text": "কোনভাবেই না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "not really",
+        "bn_text": "আসলে তা না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "naw",
+        "bn_text": "নও",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "nay",
+        "bn_text": "হ্যাঁ",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i must say no",
+        "bn_text": "আমি অবশ্যই না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i think not",
+        "bn_text": "আমি মনে করি না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is actually false",
+        "bn_text": "এটা আসলে মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i gotta say no",
+        "bn_text": "আমি না বলতে চাই",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no thanks",
+        "bn_text": "না ধন্যবাদ",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no is the answer",
+        "bn_text": "না উত্তর",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i don't think so",
+        "bn_text": "আমি তাই মনে করি না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "it's a no",
+        "bn_text": "এটা না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i think it is false",
+        "bn_text": "আমি মনে করি এটি মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "not true",
+        "bn_text": "সত্য না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is not true",
+        "bn_text": "ওটা সত্যি না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "not at all",
+        "bn_text": "একদমই না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that turns out to be false",
+        "bn_text": "এটি মিথ্যা হতে দেখা যায়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "please, no",
+        "bn_text": "অনুগ্রহ করে না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "not that",
+        "bn_text": "ওইটা না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "definitely not",
+        "bn_text": "অবশ্যই না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i would have to say the answer to that is no",
+        "bn_text": "আমি এর উত্তর বলতে হবে না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i say no to that question",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no, that is my response",
+        "bn_text": "না, এটাই আমার প্রতিক্রিয়া",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i don't believe that is possible, it is false",
+        "bn_text": "আমি বিশ্বাস করি না যে এটি সম্ভব, এটি মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i would say that the statement is definitely false",
+        "bn_text": "আমি বলব যে বিবৃতিটি অবশ্যই মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i am afraid that that is not the case",
+        "bn_text": "আমি আশঙ্কা করছি যে এটি হয় না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no, that information is wrong",
+        "bn_text": "না, সেই তথ্য ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is a completely false statement",
+        "bn_text": "এটি একটি সম্পূর্ণ মিথ্যা বিবৃতি",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that would be a no",
+        "bn_text": "যে একটি না হবে",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i do not think that is true, so i would say it is a false statement",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "incorrect, it is certainly a false statement",
+        "bn_text": "ভুল, এটি অবশ্যই একটি মিথ্যা বিবৃতি",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i do not believe that that is correct",
+        "bn_text": "আমি বিশ্বাস করি না যে এটি সঠিক",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "the answer is definitely no",
+        "bn_text": "উত্তর অবশ্যই না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "sorry, that is not true",
+        "bn_text": "দুঃখিত, এটি সত্য নয়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's a negative",
+        "bn_text": "এটি একটি নেতিবাচক",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no!",
+        "bn_text": "না!",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's not right",
+        "bn_text": "এটা ঠিক নয়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no, don't do that",
+        "bn_text": "না, এটা করবেন না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i don't like that, no",
+        "bn_text": "আমি এটা পছন্দ করি না, না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no way!",
+        "bn_text": "কোনভাবেই না!",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "oh hell no, that'd be terrible!",
+        "bn_text": "ওহে নরক না, এটা ভয়ানক হবে!",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's inaccurate",
+        "bn_text": "এটা ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's not what i want!",
+        "bn_text": "এটাই আমি চাই না!",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's completely false",
+        "bn_text": "এটি সম্পূর্ণ মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's incorrect!",
+        "bn_text": "এটা ভুল!",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's totally wrong!",
+        "bn_text": "এটা সম্পূর্ণ ভুল!",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's a hard no from me",
+        "bn_text": "এটা আমার কাছ থেকে একটি কঠিন না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no don't do that!",
+        "bn_text": "না এটা না!",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no that is not right",
+        "bn_text": "না যে ঠিক না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "false for sure",
+        "bn_text": "অবশ্যই মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's definitely false",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "nope, that's false",
+        "bn_text": "নাহ, এটা মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no, that is not right",
+        "bn_text": "না, এটা ঠিক নয়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no, that is inaccurate",
+        "bn_text": "না, এটি ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no, that can't be right",
+        "bn_text": "না, এটা ঠিক হতে পারে না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is untrue",
+        "bn_text": "এটা অসত্য",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i disagree that is false",
+        "bn_text": "আমি একমত নই যে মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "what you just said is false",
+        "bn_text": "আপনি সবেমাত্র যা বলেছেন তা মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is erroneous",
+        "bn_text": "এটা ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no that's wrong",
+        "bn_text": "না ওটা ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that isn't the right answer",
+        "bn_text": "এটা সঠিক উত্তর নয়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "the information is wrong",
+        "bn_text": "তথ্য ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is not correct",
+        "bn_text": "এটা সঠিক নয়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is not right",
+        "bn_text": "এটা ঠিক না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is wrong",
+        "bn_text": "এটা ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i'll pass",
+        "bn_text": "আমি পাশ করব",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "not that one",
+        "bn_text": "এক না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's not right, so no",
+        "bn_text": "এটা ঠিক নয়, তাই না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "the answer is false",
+        "bn_text": "উত্তর মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no, that is not right at all",
+        "bn_text": "না, এটি মোটেই ঠিক নয়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is overwhelmingly false",
+        "bn_text": "এটা অপ্রতিরোধ্য মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that's not right it's false",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i say negative",
+        "bn_text": "আমি নেতিবাচক বলি",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "negative for sure",
+        "bn_text": "নিশ্চিতভাবে নেতিবাচক",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "nope",
+        "bn_text": "না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no thank you",
+        "bn_text": "না, ধন্যবাদ",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is not the case",
+        "bn_text": "ব্যাপার সেটা না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no that isn't the case",
+        "bn_text": "না যে কেস না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no that isn't it",
+        "bn_text": "না যে এটা না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no that isn't correct",
+        "bn_text": "না যে এটি সঠিক নয়",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that would be \"no",
+        "bn_text": "যে \"না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "you are wrong",
+        "bn_text": "আপনি ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "no that is wrong",
+        "bn_text": "না যে ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that is false",
+        "bn_text": "এটা মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "negative",
+        "bn_text": "নেতিবাচক",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "what you just said is wrong",
+        "bn_text": "আপনি সবে যা বলেছেন তা ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that’s actually wrong",
+        "bn_text": "এটি আসলে ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that’s not correct",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that’s incorrect",
+        "bn_text": "এটা ভুল",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "are you sure i don’t think that’s correct",
+        "bn_text": "আপনি কি নিশ্চিত যে আমি এটি সঠিক বলে মনে করি না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that'd be a no",
+        "bn_text": "এটা না হবে",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "nada",
+        "bn_text": "কিছু",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "the answer is no",
+        "bn_text": "উত্তর না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i think that's false",
+        "bn_text": "আমি মনে করি এটি মিথ্যা",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "i believe that to be false",
+        "bn_text": "আমি বিশ্বাস করি যে মিথ্যা হতে",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "it seems not",
+        "bn_text": "মনে হচ্ছে না",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that would be false",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "no",
+        "split": "train"
+    },
+    {
+        "text": "that isn't right",
+        "bn_text": "এটা ঠিক নয়",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that's incorrect",
+        "bn_text": "এটা ভুল",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "nope that's not it",
+        "bn_text": "না, এটা না",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "no that isn't right",
+        "bn_text": "না যে ঠিক নেই",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that's not correct",
+        "bn_text": "এটা সঠিক নয়",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that isn't correct",
+        "bn_text": "এটা সঠিক নয়",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that is incorrect",
+        "bn_text": "এটা ভুল",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that's wrong",
+        "bn_text": "ওইটা ভুল",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "no, that is wrong",
+        "bn_text": "না, এটা ভুল",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "no, that is incorrect",
+        "bn_text": "না, এটি ভুল",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "no, definitely not",
+        "bn_text": "না, অবশ্যই না",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "i'd say no",
+        "bn_text": "আমি না বলব",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "the statement is false",
+        "bn_text": "বিবৃতি মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that's false",
+        "bn_text": "এটা মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "false",
+        "bn_text": "মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "it is no",
+        "bn_text": "এটা না",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "it is false",
+        "bn_text": "এটা মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "it is very much false",
+        "bn_text": "এটা খুব মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that has to be false",
+        "bn_text": "এটা মিথ্যা হতে হবে",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that is so false",
+        "bn_text": "এটা এত মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that can't be true",
+        "bn_text": "এটা সত্য হতে পারে না",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that's a negatory",
+        "bn_text": "এটি একটি অবহেলা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "there is no way in heck that is true",
+        "bn_text": "হেকের কোনও উপায় নেই যা সত্য",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "nope not it",
+        "bn_text": "না, এটা না",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that is most definitely false",
+        "bn_text": "এটি অবশ্যই মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "no, you are wrong",
+        "bn_text": "না তুমি ভুল",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "no, that is a falsehood",
+        "bn_text": "না, এটি একটি মিথ্যা",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "you got that wrong",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "that is the wrong answer",
+        "bn_text": "এটাই ভুল উত্তর",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "not right now",
+        "bn_text": "ঠিক এখন না",
+        "intent": "no",
+        "split": "test"
+    },
+    {
+        "text": "ill pass",
+        "bn_text": "আমি পাশ করব",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "not happening",
+        "bn_text": "ঘটছে না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "no, that is fake",
+        "bn_text": "না, এটা জাল",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "hell nah",
+        "bn_text": "হেল নাহ",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "no, that is invalid",
+        "bn_text": "না, এটা অবৈধ",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "i would prefer not",
+        "bn_text": "আমি পছন্দ করব না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "thats a negative",
+        "bn_text": "একটি নেতিবাচক thats",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "i meant no",
+        "bn_text": "আমি না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "i am saying no",
+        "bn_text": "আমি না বলছি",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "that is not factual",
+        "bn_text": "এটা সত্য নয়",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "no, that is not correct",
+        "bn_text": "না, যে সঠিক নয়",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "i do not think that is proper",
+        "bn_text": "আমি এটি যথাযথ বলে মনে করি না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "no good",
+        "bn_text": "ভাল না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "negatory",
+        "bn_text": "সংক্ষিপ্ত",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "invalid",
+        "bn_text": "অবৈধ",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "absolutely not",
+        "bn_text": "একেবারে না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "certainly not",
+        "bn_text": "অবশ্যই না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "no, that's wrong",
+        "bn_text": "না ওটা ভুল",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "no, that's not it",
+        "bn_text": "না, এটা না",
+        "intent": "no",
+        "split": "val"
+    },
+    {
+        "text": "no, that's not right",
+        "bn_text": "না, এটা ঠিক নয়",
+        "intent": "no",
+        "split": "val"
+    }
+]

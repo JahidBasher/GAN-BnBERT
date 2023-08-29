@@ -1,0 +1,902 @@
+[
+    {
+        "text": "i didn't hear you please repeat",
+        "bn_text": "আমি শুনিনি আপনি দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please repeat",
+        "bn_text": "দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i want you to repeat that",
+        "bn_text": "আমি চাই আপনি এটি পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "one more time please",
+        "bn_text": "আরেকবার দিন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i need you to repeat that",
+        "bn_text": "আমার আপনার এটি পুনরাবৃত্তি করা দরকার",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i need you to please repeat that",
+        "bn_text": "আমি আপনাকে এটি পুনরাবৃত্তি করতে হবে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "one more time for me please",
+        "bn_text": "আমার জন্য আরও একবার সময় দয়া করে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i would like that repeated",
+        "bn_text": "আমি যে পুনরাবৃত্তি চাই",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "just another time please",
+        "bn_text": "দয়া করে অন্য সময়",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "say it again please",
+        "bn_text": "অনুগ্রহপূর্বক এটি পুনরায় বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i must have you repeat that",
+        "bn_text": "আমি অবশ্যই আপনি এটি পুনরাবৃত্তি করতে হবে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "say it again",
+        "bn_text": "আবার বল",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i need that repeated",
+        "bn_text": "আমার যে পুনরাবৃত্তি করা দরকার",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "just one more time",
+        "bn_text": "আরও এক সময়",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i want to have that repeated for me",
+        "bn_text": "আমি আমার জন্য এটি পুনরাবৃত্তি করতে চাই",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i want that repeated",
+        "bn_text": "আমি যে পুনরাবৃত্তি চাই",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "ai what was the question",
+        "bn_text": "এআই কি প্রশ্ন ছিল",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "ai i didn't hear you",
+        "bn_text": "এআই আমি তোমাকে শুনিনি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "ai please repeat",
+        "bn_text": "এআই দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "ai could you say that again",
+        "bn_text": "এআই আপনি আবার বলতে পারেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "excuse me",
+        "bn_text": "মাফ করবেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i did not hear you",
+        "bn_text": "আমি তোমার কথা শুনতে পাই নি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't get that, please repeat",
+        "bn_text": "আমি তা পাইনি, দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please repeat yourself",
+        "bn_text": "নিজেকে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't catch that, please repeat",
+        "bn_text": "আমি তা ধরিনি, দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can you say that over",
+        "bn_text": "আপনি কি এটা বলতে পারেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "restate the last thing you told me",
+        "bn_text": "আপনি আমাকে শেষ জিনিসটি পুনরুদ্ধার করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "repeat what you just said",
+        "bn_text": "আপনি সবেমাত্র যা বলেছেন তা পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't catch that say it again",
+        "bn_text": "আমি আবার এটা ধরিনি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "what was that last thing you said",
+        "bn_text": "আপনি কি শেষ কথা বলেছেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "repeat what you just told me",
+        "bn_text": "আপনি আমাকে যা বলেছিলেন তা পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please say that one more time",
+        "bn_text": "দয়া করে আরও একবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "hold on what was that you just said",
+        "bn_text": "আপনি কি বলেছিলেন তা ধরে রাখুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "repeat that last response",
+        "bn_text": "শেষ প্রতিক্রিয়া পুনরাবৃত্তি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i need you to repeat that, please",
+        "bn_text": "দয়া করে আপনার পুনরাবৃত্তি করা দরকার",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i did not quite hear you, can you say it again",
+        "bn_text": "আমি আপনাকে বেশ শুনিনি, আপনি কি আবার বলতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can you please repeat that response",
+        "bn_text": "আপনি দয়া করে সেই প্রতিক্রিয়াটি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i did not hear you, please repeat",
+        "bn_text": "আমি তোমাকে শুনিনি, দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "say it one more time please",
+        "bn_text": "দয়া করে এটি আরও একবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't hear, please say it again",
+        "bn_text": "আমি শুনিনি, দয়া করে আবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "im sorry can you repeat yourself",
+        "bn_text": "আমি দুঃখিত আপনি নিজেকে পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i missed what you said, can you say it again",
+        "bn_text": "আপনি যা বলেছেন তা আমি মিস করেছি, আপনি কি আবার এটি বলতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i couldn't hear you, can you repeat it",
+        "bn_text": "আমি আপনাকে শুনতে পেলাম না, আপনি কি এটি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't hear say it again please",
+        "bn_text": "আমি আবার এটি বলতে শুনিনি দয়া করে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can you repeat yourself",
+        "bn_text": "আপনি নিজেকে পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i would like you to repeat yourself",
+        "bn_text": "আমি চাই আপনি নিজেকে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i missed that last one, please repeat",
+        "bn_text": "আমি শেষটি মিস করেছি, দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "what was that",
+        "bn_text": "ঐটা কি ছিল",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't hear you can you repeat that",
+        "bn_text": "আমি শুনিনি আপনি এটি পুনরাবৃত্তি করতে পারেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please repeat that phrase",
+        "bn_text": "TRANSLATION_FAILED",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i missed what you said, please say it again",
+        "bn_text": "আপনি যা বলেছেন তা আমি মিস করেছি, দয়া করে এটি আবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can you tell me what you just said",
+        "bn_text": "আপনি কি বলেছিলেন আপনি কি আমাকে বলতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "will you repeat that, please",
+        "bn_text": "আপনি কি পুনরাবৃত্তি করবেন, দয়া করে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "could you repeat that, please",
+        "bn_text": "তুমি কি ওটা পুনরাবৃত্তি করতে পারবে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "would you repeat that, please",
+        "bn_text": "আপনি কি পুনরাবৃত্তি করবেন, দয়া করে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "would you repeat that",
+        "bn_text": "আপনি কি পুনরাবৃত্তি করবেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "would you please ask the question again",
+        "bn_text": "আপনি কি আবার প্রশ্ন জিজ্ঞাসা করবেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i am needing for you to say that again",
+        "bn_text": "আপনার আবার এটি বলার জন্য আমি দরকার",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i need for you to ask the question again",
+        "bn_text": "আপনার আবার প্রশ্ন জিজ্ঞাসা করা দরকার",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "could you ask the question again",
+        "bn_text": "আপনি আবার প্রশ্ন জিজ্ঞাসা করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i am going to need you to say that again",
+        "bn_text": "আমি আবার এটি বলার জন্য আপনার প্রয়োজন হবে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "would you say that again, please",
+        "bn_text": "আপনি কি আবার বলবেন, দয়া করে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "repeat the question",
+        "bn_text": "প্রশ্ন পুনরাবৃত্তি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't hear what you said",
+        "bn_text": "আপনি যা বলেছেন তা আমি শুনিনি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "repeat that please",
+        "bn_text": "দয়া করে পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't hear you",
+        "bn_text": "আমি তোমাকে শুনিনি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didnt hear what you just said, can you say it again",
+        "bn_text": "আপনি সবেমাত্র যা বলেছেন তা আমি শুনিনি, আপনি কি আবার এটি বলতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "may you repeat what you said again",
+        "bn_text": "আপনি আবার যা বলেছেন তা আপনি পুনরাবৃত্তি করতে পারেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't hear what you just said, can you repeat it",
+        "bn_text": "আপনি কেবল যা বলেছেন তা আমি শুনিনি, আপনি কি এটি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't understand what you just said, can you repeat it",
+        "bn_text": "আপনি কেবল যা বলেছেন তা আমি বুঝতে পারি নি, আপনি কি এটি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didnt understand what you just said, can you say it again",
+        "bn_text": "আপনি কেবল যা বলেছেন তা আমি বুঝতে পারি নি, আপনি কি আবার এটি বলতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can you say what you just said again",
+        "bn_text": "আপনি কি আবার বলেছেন তা বলতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "could you repeat what you just said again",
+        "bn_text": "আপনি আবার যা বলেছেন তা আপনি কি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "would you repeat what you just said",
+        "bn_text": "আপনি কি বলেছেন তা কি পুনরাবৃত্তি করবেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "will you please repeat what you said",
+        "bn_text": "আপনি যা বলেছেন তা কি আপনি পুনরাবৃত্তি করবেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "what did you just mention",
+        "bn_text": "আপনি কি উল্লেখ করেছেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i need that said again",
+        "bn_text": "আমার আবার বলেছি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i need to know again",
+        "bn_text": "আমার আবার জানা দরকার",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please say it again",
+        "bn_text": "দয়া করে এটি আবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "tell me once more",
+        "bn_text": "আমাকে আরও একবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "repeat that again",
+        "bn_text": "আবার পুনরাবৃত্তি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "replay what you just said",
+        "bn_text": "আপনি সবেমাত্র যা বলেছেন তা পুনরায় খেলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i missed that, say it again",
+        "bn_text": "আমি এটা মিস করেছি, আবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "could you say that again",
+        "bn_text": "আপনি আবার যে বলতে পারে",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "repeat your last message",
+        "bn_text": "আপনার শেষ বার্তাটি পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "say it one more time",
+        "bn_text": "এটি আরও একবার বলুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i did not understand say it again",
+        "bn_text": "আমি আবার বলতে বুঝতে পারি না",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can you please sat it one more time",
+        "bn_text": "আপনি কি আরও একবার এটি বসতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i did not catch that, repeat what you just said",
+        "bn_text": "আমি এটি ধরিনি, আপনি যা বলেছিলেন তা পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "sorry, i didn't hear you, can you say that gain",
+        "bn_text": "দুঃখিত, আমি আপনাকে শুনিনি, আপনি কি সেই লাভটি বলতে পারেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't hear you, can you repeat that louder",
+        "bn_text": "আমি তোমাকে শুনিনি, আপনি কি আরও জোরে পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i didn't catch that so please repeat it",
+        "bn_text": "আমি এটি ধরিনি তাই দয়া করে এটি পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please run that by me again",
+        "bn_text": "দয়া করে আবার আমার দ্বারা চালান",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "i missed that say it again",
+        "bn_text": "আমি আবার এটা বলতে মিস করেছি",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can you say again",
+        "bn_text": "আপনি আবার বলতে পারেন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please repeat what you just said",
+        "bn_text": "আপনি সবেমাত্র যা বলেছেন তা পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "can i get you to say that once more",
+        "bn_text": "আমি কি আপনাকে আরও একবার বলতে পারি?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "will you repeat what you just said",
+        "bn_text": "আপনি যা বলেছেন তা আপনি কি পুনরাবৃত্তি করবেন?",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "please repeat over what you said",
+        "bn_text": "আপনি যা বলেছেন তা পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "come again with that",
+        "bn_text": "আবার এসো",
+        "intent": "repeat",
+        "split": "train"
+    },
+    {
+        "text": "may you say that again",
+        "bn_text": "আপনি আবার বলতে পারেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "can you please repeat that",
+        "bn_text": "আপনি দয়া করে এটি পুনরাবৃত্তি করতে পারেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "can you please say that again",
+        "bn_text": "আপনি কি আবার বলতে পারেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "may you please say that again",
+        "bn_text": "আপনি আবার এটি বলতে পারেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "would you say it again please",
+        "bn_text": "আপনি আবার এটি বলবেন দয়া করে",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "would you repeat what you said earlier",
+        "bn_text": "আপনি কি আগে যা বলেছিলেন তা পুনরাবৃত্তি করবেন?",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "i would like you to repeat it",
+        "bn_text": "আমি আপনাকে এটি পুনরাবৃত্তি করতে চাই",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "repeat please",
+        "bn_text": "দয়া করে পুনরায় করুন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "pardon, i didn't hear you",
+        "bn_text": "ক্ষমা, আমি তোমাকে শুনিনি",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "i didn't hear you can you say that again",
+        "bn_text": "আমি শুনিনি আপনি আবার বলতে পারেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "i didn't catch that",
+        "bn_text": "আমি এটা ধরিনি",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "could you repeat that",
+        "bn_text": "আপনি কি ওটা আবার বলবেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "say again please",
+        "bn_text": "দয়া করে আবার বলুন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "would you mind repeating that",
+        "bn_text": "আপনি কি পুনরাবৃত্তি করতে আপত্তি করবেন?",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "sorry, i didn't catch that could you say it again",
+        "bn_text": "দুঃখিত, আমি ধরিনি যে আপনি এটি আবার বলতে পারেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "i need you to repeat that please",
+        "bn_text": "দয়া করে আপনার পুনরাবৃত্তি করা দরকার",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "repeat that for me please",
+        "bn_text": "আমার জন্য এটি পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "what did you just say",
+        "bn_text": "তুমি এইমাত্র কি বলেছ",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "please say it one more time",
+        "bn_text": "দয়া করে এটি আরও একবার বলুন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "sorry i missed that",
+        "bn_text": "দুঃখিত আমি এটা মিস করেছি",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "i didn't understand you",
+        "bn_text": "আমি তোমাকে বুঝতে পারি নি",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "can you repeat the question again",
+        "bn_text": "আপনি কি আবার প্রশ্নটি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "can you phrase that question again",
+        "bn_text": "আপনি কি আবার এই প্রশ্নটি বাক্যাংশ করতে পারেন?",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "what'd you say",
+        "bn_text": "তুমি কি বলেছ",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "please repeat the last thing",
+        "bn_text": "শেষ জিনিসটি পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "repeat that",
+        "bn_text": "যে পুনরাবৃত্তি",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "can you repeat that",
+        "bn_text": "তুমি কি পুনরাবৃত্তি করতে পার সেটি",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "what were you just saying",
+        "bn_text": "আপনি কি বলছিলেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "come again",
+        "bn_text": "আবার আসবেন",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "can you say that again, please",
+        "bn_text": "আপনি কি আবার বলতে পারেন, দয়া করে",
+        "intent": "repeat",
+        "split": "test"
+    },
+    {
+        "text": "i want to hear that again",
+        "bn_text": "আমি আবার শুনতে চাই",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "repeat that for me",
+        "bn_text": "আমার জন্য পুনরাবৃত্তি",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "could that be repeated",
+        "bn_text": "যে পুনরাবৃত্তি করা যেতে পারে?",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "can you repeat what you said",
+        "bn_text": "আপনি যা বলেছেন তা আপনি কি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "i did not hear what you said",
+        "bn_text": "আপনি যা বলেছেন তা আমি শুনিনি",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "what did you just ask",
+        "bn_text": "আপনি কি জিজ্ঞাসা করেছেন",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "can you ask me that again",
+        "bn_text": "আপনি কি আমাকে আবার জিজ্ঞাসা করতে পারেন?",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "what question did you just ask me",
+        "bn_text": "আপনি আমাকে কি প্রশ্ন জিজ্ঞাসা করেছেন",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "can you repeat that question",
+        "bn_text": "আপনি কি এই প্রশ্নটি পুনরাবৃত্তি করতে পারেন?",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "what was said",
+        "bn_text": "কি বলা হয়েছিল",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "what",
+        "bn_text": "কি",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "repeat that once more",
+        "bn_text": "আরও একবার পুনরাবৃত্তি",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "please repeat what you said",
+        "bn_text": "আপনি যা বলেছেন তা পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "please ask me again",
+        "bn_text": "আমাকে আবার জিজ্ঞাসা করুন",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "i'm sorry, i didn't understand what you said",
+        "bn_text": "আমি দুঃখিত, আপনি যা বলেছেন তা আমি বুঝতে পারি নি",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "what did you ask again",
+        "bn_text": "আপনি আবার কি জিজ্ঞাসা",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "please say that again",
+        "bn_text": "দয়া করে আবার বলুন",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "can you repeat that please",
+        "bn_text": "অনুগ্রহ করে তুমি কি পুনরাবৃতি করবে",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "what was that question again",
+        "bn_text": "আবার কি প্রশ্ন ছিল",
+        "intent": "repeat",
+        "split": "val"
+    },
+    {
+        "text": "i'm sorry please repeat the question",
+        "bn_text": "আমি দুঃখিত দয়া করে প্রশ্নটি পুনরাবৃত্তি করুন",
+        "intent": "repeat",
+        "split": "val"
+    }
+]

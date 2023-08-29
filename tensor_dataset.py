@@ -92,13 +92,6 @@ class DataGenerator(torch.utils.data.Dataset):
             truncation=True
         )
 
-        # {
-        #     'input_ids': torch.tensor(input_ids),
-        #     'attention_mask': torch.tensor(attention_mask),
-        #     'label_id': torch.tensor(self.label2class[label], dtype=torch.long),
-        #     'label_mask': torch.tensor(label_mask)
-        # }
-
         return torch.tensor(input_ids),\
                torch.tensor(attention_mask),\
                torch.tensor(self.label2class[label], dtype=torch.long),\

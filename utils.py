@@ -1,22 +1,20 @@
 import math
 import numpy as np
 
+def get_qc_examples_from_file(files):
+    import json
+    examples = {'train': [], 'test': [], 'val': []}
+    for f in files:
+        with open(f, 'r') as f:
+            data = json.load(f)
+            for data_point in data:
+                text = data_point['bn_text']
+                intent = data_point['intent']
+                split = data_point['split']
 
-def get_qc_examples_from_file(input_file):
-    examples = []
-
-    with open(input_file, 'r') as f:
-        contents = f.read()
-        file_as_list = contents.splitlines()
-        for line in file_as_list[1:]:
-            split = line.split(" ")
-            question = ' '.join(split[1:])
-
-            text_a = question
-            inn_split = split[0].split(":")
-            label = inn_split[0] + "_" + inn_split[1]
-            examples.append((text_a, label))
-        f.close()
+                if text == 'TRANSLATION_FAILED':
+                    continue
+                examples[split].append((text, intent))
 
     return examples
 
@@ -57,9 +55,5 @@ def balance_train_data(train_examples, unlabeled_examples):
         train_examples = train_examples + unlabeled_examples
         tmp_masks = np.zeros(len(unlabeled_examples), dtype=bool)
         train_label_masks = np.concatenate([train_label_masks, tmp_masks])
-    
+
     return train_examples, train_label_masks
-
-
-
-

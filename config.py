@@ -1,9 +1,10 @@
+import glob
 
 
 class Config:
-    artifact_path = "./artifact/exp-1"
+    artifact_path =  "./artfact/exp-test"
     #  Transformer Encoder parameters
-    encoder_model_name = "bert-base-cased"  # change the model name if you want to use a different encoder
+    encoder_model_name = ["csebuetnlp/banglabert", "sagorsarker/bangla-bert-base"][0]  # change the model name if you want to use a different encoder
     max_seq_length = 64  # tokenizer max length; could be up to 512
     train_batch_size = 64
     val_batch_size = 64
@@ -16,7 +17,7 @@ class Config:
     out_dropout_rate = 0.2  # dropout to be applied to discriminator's input vectors
     #  Optimization parameters
     epsilon = 1e-8
-    num_train_epochs = 10
+    num_train_epochs = 50
     learning_rate_discriminator = 5e-5
     learning_rate_generator = 5e-5
     # Scheduler
@@ -28,18 +29,38 @@ class Config:
     test_filename = "./data/test.tsv"
     apply_balance = True  # Replicate labeled data to balance poorly represented datasets
 
-    label_list = [
-        "UNK_UNK","ABBR_abb", "ABBR_exp", "DESC_def", "DESC_desc",
-        "DESC_manner", "DESC_reason", "ENTY_animal", "ENTY_body",
-        "ENTY_color", "ENTY_cremat", "ENTY_currency", "ENTY_dismed",
-        "ENTY_event", "ENTY_food", "ENTY_instru", "ENTY_lang",
-        "ENTY_letter", "ENTY_other", "ENTY_plant", "ENTY_product",
-        "ENTY_religion", "ENTY_sport", "ENTY_substance", "ENTY_symbol",
-        "ENTY_techmeth", "ENTY_termeq", "ENTY_veh", "ENTY_word", "HUM_desc",
-        "HUM_gr", "HUM_ind", "HUM_title", "LOC_city", "LOC_country",
-        "LOC_mount", "LOC_other", "LOC_state", "NUM_code", "NUM_count",
-        "NUM_date", "NUM_dist", "NUM_money", "NUM_ord", "NUM_other",
-        "NUM_perc", "NUM_period", "NUM_speed", "NUM_temp", "NUM_volsize",
-        "NUM_weight"
-    ]
+
+    files_path = glob.glob('./dataset/translated_data/*.json')
+    label_list = """calendar
+                date
+                thank_you
+                time
+                next_song
+                goodbye
+                how_old_are_you
+                change_user_name
+                change_volume
+                tell_joke
+                current_location
+                todo_list
+                fun_fact
+                traffic
+                distance
+                where_are_you_from
+                translate
+                calculator
+                weather
+                spelling
+                reminder
+                make_call
+                alarm
+                what_are_your_hobbies
+                no
+                play_music
+                repeat
+                yes
+                what_is_your_name
+                what_song""".split('\n')
+
+    label_list = [i.strip() for i in label_list]
     label2class = {cls: idx for idx, cls in enumerate(label_list)}

@@ -26,7 +26,6 @@ def get_device(device='cpu'):
     else:
         print('No GPU available, using the CPU instead.')
         device = torch.device("cpu")
-
     return device
 
 
@@ -49,24 +48,19 @@ def get_model_components(cfg: Config):
 
 def main(cfg: Config):
     tokenizer = AutoTokenizer.from_pretrained(cfg.encoder_model_name)
-
-    labeled_examples = utils.get_qc_examples_from_file(cfg.labeled_file)
-    unlabeled_examples = utils.get_qc_examples_from_file(cfg.unlabeled_file)
-    test_examples = utils.get_qc_examples_from_file(cfg.test_filename)
-
+    examples = utils.get_qc_examples_from_file(cfg.files_path)
     train_examples, train_label_masks = utils.balance_train_data(
-        train_examples=labeled_examples,
-        unlabeled_examples=unlabeled_examples
+        train_examples=examples['train'],
+        unlabeled_examples=[]
     )
-
     train_data = utils.process_all_data(
         train_examples,
         train_label_masks,
         balance_label_examples=cfg.apply_balance
     )
     test_data = utils.process_all_data(
-        test_examples,
-        np.ones(len(test_examples), dtype=bool),
+        examples['val'],
+        np.ones(len(examples['val']), dtype=bool),
         balance_label_examples=False
     )
     train_dataloader = get_tensor_dataset(

@@ -30,7 +30,7 @@ class Config:
     apply_balance = True  # Replicate labeled data to balance poorly represented datasets
 
 
-    files_path = glob.glob('./dataset/translated_data/*.json')
+    files_path = glob.glob('./dataset/BNIntent30/*.json')
     label_list = """calendar
                 date
                 thank_you

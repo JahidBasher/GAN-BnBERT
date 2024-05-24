@@ -1,5 +1,5 @@
 ## Overview
-his repository contains the implementation of a GAN-BERT model for text classification tasks. The model leverages a Transformer encoder combined with a Generative Adversarial Network (GAN) framework to enhance performance on labeled and unlabeled data. The core components include an encoder (BanglaBERT), a discriminator, and a generator, designed to work together to classify text data more effectively. The corresponding paper is available at [Researchgate: Bengali Intent Classification with Generative Adversarial BERT (https://www.researchgate.net/publication/378530127_Bengali_Intent_Classification_with_Generative_Adversarial_BERT).
+This repository contains the implementation of a GAN-BERT model for text classification tasks. The model leverages a Transformer encoder combined with a Generative Adversarial Network (GAN) framework to enhance performance on labeled and unlabeled data. The core components include an encoder (BanglaBERT), a discriminator, and a generator, designed to work together to classify text data more effectively. The corresponding paper is available at [Researchgate: Bengali Intent Classification with Generative Adversarial BERT (https://www.researchgate.net/publication/378530127_Bengali_Intent_Classification_with_Generative_Adversarial_BERT).
 
 ## Abstract
 Intent classification is a fundamental task in natural language understanding, aiming to categorize user queries or sentences into predefined classes to understand user intent. The most challenging aspect of this particular task lies in effectively incorporating all possible classes of intent into a dataset while ensuring adequate linguistic variation. Plenty of research has been conducted in the related domains in rich-resource languages like English. In this study, we introduce BNIntent30, a comprehensive Bengali intent classification dataset containing 30 intent classes. The dataset is excerpted and translated from the CLINIC150 dataset containing a diverse range of user intents categorized over 150 classes. Furthermore, we propose a novel approach for Bengali intent classification using Generative Adversarial BERT to evaluate the proposed dataset, which we call GAN-BnBERT. Our approach leverages the power of BERT-based contextual embeddings to capture salient linguistic features and contextual information from the text data, while the generative adversarial network (GAN) component complements the model's ability to learn diverse representations of existing intent classes through generative modeling. Our experimental results demonstrate that the GAN-BnBERT model achieves superior performance on the newly introduced BNIntent30 dataset, surpassing the existing Bi-LSTM and the stand-alone BERT-based classification model.
@@ -60,10 +60,10 @@ trainer.to_device()
 trainer.configure_optimizer()
 results = trainer.val_epoch(test_dataloader, mode='inference')
 ```
-## Colab Ipynb:
+## Colab:
 - How to replicate: [colab example](https://colab.research.google.com/drive/17km0Zmu7_m6Kv7UYt7pqKLjP9w4JDXHs#scrollTo=Nhe7bVIduxmT)
 
-## Cite
+## BibTex
 ```latex
 @inproceedings{inproceedings,
 author = {Hasan, Mehedi and Ibna Basher, Mohammad Jahid and Shawon, Md},
